@@ -23,21 +23,21 @@ window.onscroll = function(){
 
 
     for (let i = 0; i < oGlBoxH.length; i++) {
-        if (scrollTop + document.documentElement.clientHeight+400 > getTop(oGlBoxH[i])) {
+        if (scrollTop + document.documentElement.clientHeight+600 > getTop(oGlBoxH[i])) {
             oGlBoxH[i].style.left = 0;
             oGlBoxH[i].style.opacity = 1;
             oGlBoxH[i].style.transition = '1.5s';
         }
     }
     for (let i = 0; i < oGlBoxP.length; i++) {
-        if (scrollTop + document.documentElement.clientHeight+400 > getTop(oGlBoxP[i])) {
+        if (scrollTop + document.documentElement.clientHeight+600 > getTop(oGlBoxP[i])) {
             oGlBoxP[i].style.left = 0;
             oGlBoxP[i].style.opacity = 1;
             oGlBoxP[i].style.transition = '1.5s';
         }
     }
     for (let i = 0; i < oGlBoxA.length; i++) {
-        if (scrollTop + document.documentElement.clientHeight+400 > getTop(oGlBoxA[i])) {
+        if (scrollTop + document.documentElement.clientHeight+600 > getTop(oGlBoxA[i])) {
             oGlBoxA[i].style.left = 0;
             oGlBoxA[i].style.opacity = 1;
             oGlBoxA[i].style.transition = '1.5s';

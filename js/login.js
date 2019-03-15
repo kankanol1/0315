@@ -72,7 +72,48 @@ $(objP).blur(function(){
 
 
 let index = false;
-$('#norm').codeVerify({
+
+let oLog = document.getElementById('button');
+oLog.addEventListener('click',function(){
+    if(infoItem == 4){
+        $.ajax({
+            'url':'../js/index.php',
+            'type':'GET',
+            'async':true,
+            'dataType':'json',
+            'data':{
+                "name":$('#name').val(),
+                "company":$('#company').val(),
+                "email":$('#email').val(),
+                "phone":$('#phone').val(),
+                "text":$('#text').val()
+            },
+            'success':function(data){
+                $('#name').val('');
+                $('#company').val('');
+                $('#email').val('');
+                $('#phone').val('');
+                $('#text').val('');
+                $('.varify-input-code').val('');
+                alert('感谢您的合作，我们会进款联系您。');
+                window.open('../','_self',true);
+            },
+            'error':function(data){
+                $('.varify-input-code').val('');
+                alert('数据库连接失败');
+            },
+        });
+
+    }else{
+
+        alert('信息不完整');
+
+
+    }
+})
+
+
+/*$('#norm').codeVerify({
     type :1,
     width : '250px',
     height : '35px',
@@ -84,48 +125,14 @@ $('#norm').codeVerify({
 
     },
     success : function() {
-        if(infoItem == 4){
-            $.ajax({
-                'url':'../js/index.php',
-                'type':'GET',
-                'async':true,
-                'dataType':'json',
-                'data':{
-                    "name":$('#name').val(),
-                    "company":$('#company').val(),
-                    "email":$('#email').val(),
-                    "phone":$('#phone').val(),
-                    "text":$('#text').val()
-                },
-                'success':function(data){
-                    $('#name').val('');
-                    $('#company').val('');
-                    $('#email').val('');
-                    $('#phone').val('');
-                    $('#text').val('');
-                    $('.varify-input-code').val('');
-                    alert('感谢您的合作，我们会进款联系您。');
-                    window.open('../','_self',true);
-                },
-                'error':function(data){
-                    $('.varify-input-code').val('');
-                    alert('数据库连接失败');
-                },
-            });
 
-        }else{
-
-            alert('信息不完整');
-            $('.varify-input-code').val('');
-
-        }
 
     },
     error : function() {
         $('.varify-input-code').val('');
         alert('验证码不匹配！');
     }
-});
+});*/
 
 
 

@@ -2,16 +2,7 @@
 
 
 /******************头部事件********************/
-/*let oHeaderA = document.querySelectorAll('#header .navBarA .itemU li');
-let oHeaderFlag = 0;
-for(let i=0;i<oHeaderA.length;i++){
-    oHeaderA[i].index = i;
-    oHeaderA[i].addEventListener('click',function(){
-        oHeaderA[oHeaderFlag].className = '';
-        this.className = 'active';
-        oHeaderFlag = this.index;
-    })
-}*/
+
 
 let connectBox = document.querySelector('#connectBox');
 
@@ -50,7 +41,7 @@ window.onscroll = function () {
         oDemoLi[0].style.opacity = 1;
         oDemoLi[0].style.transition = '1.5s';
         for (let i = 1; i < oDemoLi.length; i++) {
-            if (scrollTop + document.documentElement.clientHeight - 120 > oDemoLi[i].offsetTop) {
+            if (scrollTop + document.documentElement.clientHeight - 200 > oDemoLi[i].offsetTop) {
                 oDemoLi[i].style.left = 0;
                 oDemoLi[i].style.opacity = 1;
                 oDemoLi[i].style.transition = '2s';
