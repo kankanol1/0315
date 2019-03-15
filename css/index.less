@@ -16,9 +16,26 @@ body {
   }
 }
 
+@keyframes guanlan
+{
+  0%   {color: red;}
+  25%  {color: #ff1bd2;}
+  100% {color: green;}
+}
 
+@-webkit-keyframes guanlan /* Safari 与 Chrome */
+{
+  0%   {color: red;}
+  25%  {color: #ff1bd2;}
+  100% {color: green;}
+}
 
+.car{
+  animation: guanlan 1s;
+  -webkit-animation: guanlan 1s; /* Safari 与 Chrome */
+  animation-iteration-count: infinite;
 
+}
 
 
 
@@ -28,9 +45,12 @@ body {
   /**-----------------------------------------------导航-------------------------------------------------------*/
 
   #header {
-    height: 0px;
 
+    height: 60px;
     .navBarA {
+      padding-left: 20px;
+      //height: 50px;
+      background-color: #000;
       z-index: 2019;
       width: 100%;
       height: 60px;
@@ -244,23 +264,24 @@ body {
         text-align: center;
         overflow: hidden;
         h2 {
-          margin: 20px 0;
+          margin: 50px 0;
           color: #fff;
           text-shadow: 0 0 4px black;
           position: relative;
           left: 200px;
           opacity: 0;
+          font-size: 48px;
 
         }
 
         p {
-          font-size: 16px;
+          font-size: 20px;
           position: relative;
           left: 200px;
           opacity: 0;
         }
         a {
-          margin: 50px auto 20px;
+          margin: 100px auto 20px;
           font-size: 20px;
           height: 50px;
           line-height: 40px;
@@ -283,18 +304,23 @@ body {
         top: 10px;
         right: 10px;
       }
+      height: 620px;
+
 
     }
 
     .bg0 {
       background-image: url("../img/index/model2-1.jpg");
+      background-size: 100% 620px;
     }
     .bg1 {
       background-image: url("../img/index/model3-1.jpg");
+      background-size: 100% 620px;
 
     }
     .bg2 {
       background-image: url("../img/index/model4-1.jpg");
+      background-size: 100% 620px;
 
     }
     .bg3 {
@@ -303,6 +329,7 @@ body {
     }
     .bg4 {
       background-image: url("../img/index/model6-1.jpg");
+      background-size: 100% 620px;
 
     }
   }
@@ -310,20 +337,49 @@ body {
 
 
   #intro{
-    background-image: url("../img/index/model1.jpg");
+    font-family: fontnameRegular;
+    background-image: url("../img/index/model1-1.jpg");
     background-size: 100% 100%;
-    height: 640px;
+    height: 620px;
     width: 100%;
     padding: 50px;
+    padding-top: 150px;
     p{
       color: #fff;
+      padding-left: 100px;
+
       text-align: center;
-      font-size: 16px;
+      font-size: 32px;
+      position: relative;
+    }
+    p::before{
+      content: '';
+      position: absolute;
+      border: 1px solid #fff;
+      height: 1px;
+      width: 120px;
+      top: 20px;
+      left: 420px;
+    }
+    p::after{
+      content: '';
+      position: absolute;
+      border: 1px solid #fff;
+      height: 1px;
+      width: 120px;
+      top: 20px;
+      right: 316px;
+
     }
     h1{
+      padding-left: 100px;
+
       color: #fff;
       text-align: center;
       margin-top: 80px;
+      font-size: 48px;
+      margin-bottom: 60px;
+
     }
 
   }
@@ -350,8 +406,10 @@ body {
           width: 150px;
           height: 45px;
         }
+        .iml{
+          height: 40px;
+        }
         .imh{
-          //width: 150px;
           height: 35px;
         }
         img{
@@ -672,6 +730,7 @@ body {
             padding: 20px;
             h4{
               text-align: center;
+              font-weight: bold;
             }
             p{
               text-indent: 30px;
@@ -2732,13 +2791,14 @@ body {
       .info {
         display: none;
         position: relative;
-        left: -225px;
+        left: -235px;
         top: -110px;
         color: #fff;
 
+
         .co {
-          padding: 8px 15px;
-          width: 200px;
+          padding: 14px 15px;
+          width: 210px;
           height: 120px;
           position: absolute;
           border-radius: 10px;
@@ -2747,8 +2807,9 @@ body {
             padding: 0;
             margin: 0;
             height: 20px;
+            line-height: 50px;
             font-size: 12px;
-            line-height: 20px;
+            //line-height: 20px;
           }
         }
 
@@ -2759,7 +2820,7 @@ body {
         height: 0;
         display: block;
         position: absolute;
-        left: 200px;
+        left: 210px;
         top: 20px;
         border: 8px solid rgba(0, 0, 0, 0);
         border-left: 8px solid #000;
