@@ -3,7 +3,7 @@
 
 /******************头部事件********************/
 
-
+location.hash = 'gl' + Math .random();
 let connectBox = document.querySelector('#connectBox');
 
 
