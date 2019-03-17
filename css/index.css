@@ -217,10 +217,10 @@ body {
   position: relative;
   left: 100px;
   opacity: 0;
-  font-size: 48px;
+  font-size: 40px;
 }
 #glBox .bg .gl p {
-  font-size: 20px;
+  font-size: 24px;
   position: relative;
   left: 100px;
   opacity: 0;
@@ -278,9 +278,9 @@ body {
 }
 #intro p {
   color: #fff;
-  padding-left: 320px;
+  padding-left: 340px;
   text-align: center;
-  font-size: 32px;
+  font-size: 28px;
   position: relative;
 }
 #intro p::before {
@@ -290,7 +290,7 @@ body {
   height: 1px;
   width: 120px;
   top: 20px;
-  left: 520px;
+  left: 560px;
 }
 #intro p::after {
   content: '';
@@ -299,14 +299,14 @@ body {
   height: 1px;
   width: 120px;
   top: 20px;
-  right: 180px;
+  right: 220px;
 }
 #intro h1 {
-  padding-left: 320px;
+  padding-left: 340px;
   color: #fff;
   text-align: center;
   margin-top: 80px;
-  font-size: 48px;
+  font-size: 38px;
   margin-bottom: 60px;
 }
 /*---------------------------------合作伙伴------------------------*/
