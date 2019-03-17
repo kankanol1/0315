@@ -594,13 +594,13 @@ body {
 #product .bar ul {
   margin: 0 auto;
   height: 100px;
-  width: 100%;
+  width: 800px;
   padding-top: 25px;
 }
 #product .bar ul li {
   height: 50px;
   line-height: 46px;
-  width: 50%;
+  width: 388px;
   float: left;
   border-bottom: 2px solid #999;
   text-align: center;
@@ -631,6 +631,7 @@ body {
 }
 #product .imgT h2 {
   position: relative;
+  float: left;
   top: -250px;
   left: 280px;
   text-align: left;
