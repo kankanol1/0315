@@ -89,7 +89,7 @@ oLog.addEventListener('click', function () {
                 $('#email').val('');
                 $('#phone').val('');
                 $('#text').val('');
-                alert('感谢您的合作，我们会进款联系您。');
+                alert('感谢您的合作，我们会尽快联系您。');
                 window.open('../', '_self', true);
             },
             'error': function (data) {
