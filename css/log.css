@@ -32,7 +32,9 @@
 #button{
     width: 270px;
     border: 1px solid #999;
+    background-color: #00429a;
     padding: 2px 10px;
+    color: #fff;
 }
 
 label{
