@@ -1,108 +1,104 @@
 /*-------------------联系我们--------------*/
 
-let objN = document.getElementById("name");
-let nReg = document.querySelector('.nreg');
-let objE = document.getElementById("email");
-let cReg = document.querySelector('.creg');
 
-let objC = document.getElementById('company');
-let objP = document.getElementById("phone");
 
-let infoItem = 0;
-let index = false;
-let oLog = document.getElementById('button');
 
-$(objN).blur(function () {
-    $(nReg).text("");
-    if (objN.value === "") {
-        $(nReg).text("姓名不可空!");
-        return false;
-    } else {
-        infoItem++;
-        $(nReg).text("");
-        return false;
+
+//创建和初始化地图函数：
+function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
     }
-});
-$(objC).blur(function () {
-    $(cReg).text("");
-    if (objC.value === "") {
-        $(cReg).text("公司名称不可为空!");
-        return false;
-    } else {
-        infoItem++;
-        $(cReg).text("");
-        return false;
-    }
-});
-$(objE).blur(function () {
 
-    $(".ereg").text("");
-    let reg = new RegExp("^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$"); //正则表达式
-    if (objE.value === "") {
-        $(".ereg").text("邮箱不可为空!");
-        return false;
-    } else if (!reg.test(objE.value)) {
-        $(".ereg").text("邮箱格式不正确!");
-        return false;
-    } else {
-        infoItem++;
-        $(".ereg").text("");
-        return false;
-    }
-});
-$(objP).blur(function () {
-    let reg1 = /^0\d{2,3}-\d{7,8}$/;
-    let reg2 = /^1\d{10}$/;
-    if (objP.value === "") {
-        $(".preg").text("电话不可为空!");
-        return false;
-    } else if (!(reg1.test(objP.value) || reg2.test(objP.value))) {
-        $(".preg").text("电话格式不正确!");
-        return false;
-    }
-    else {
-        infoItem++;
-        $(".preg").text("");
-        return false;
-    }
-});
+//创建地图函数：
+function createMap(){
+    var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+    var point = new BMap.Point(117.154379,36.669941);//定义一个中心点坐标
+    map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+    window.map = map;//将map变量存储在全局
+}
 
+//地图事件设置函数：
+function setMapEvent(){
+    map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+    map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+    map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+    map.enableKeyboard();//启用键盘上下左右键移动地图
+}
 
+//地图控件添加函数：
+function addMapControl(){
+    //向地图中添加缩放控件
+    var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+    map.addControl(ctrl_nav);
+    //向地图中添加缩略图控件
+    var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:0});
+    map.addControl(ctrl_ove);
+    //向地图中添加比例尺控件
+    var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+    map.addControl(ctrl_sca);
+}
 
-oLog.addEventListener('click', function () {
-    if (infoItem == 4) {
-        $.ajax({
-            'url': '../js/index.php',
-            'type': 'GET',
-            'async': true,
-            'dataType': 'json',
-            'data': {
-                "name": $('#name').val(),
-                "company": $('#company').val(),
-                "email": $('#email').val(),
-                "phone": $('#phone').val(),
-                "text": $('#text').val()
-            },
-            'success': function (data) {
-                $('#name').val('');
-                $('#company').val('');
-                $('#email').val('');
-                $('#phone').val('');
-                $('#text').val('');
-                alert('感谢您的合作，我们会尽快联系您。');
-                window.open('../', '_self', true);
-            },
-            'error': function (data) {
-                alert('数据库连接失败');
-            },
+//标注点数组
+let markerArr = [{title:"公司地点",content:"山东省济南市高新区舜泰广场1号楼西区1105室",point:"117.154693|36.670259",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+];
+//创建marker
+function addMarker(){
+    for(var i=0;i<markerArr.length;i++){
+        var json = markerArr[i];
+        var p0 = json.point.split("|")[0];
+        var p1 = json.point.split("|")[1];
+        var point = new BMap.Point(p0,p1);
+        var iconImg = createIcon(json.icon);
+        var marker = new BMap.Marker(point,{icon:iconImg});
+        var iw = createInfoWindow(i);
+        var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+        marker.setLabel(label);
+        map.addOverlay(marker);
+        label.setStyle({
+            borderColor:"#808080",
+            color:"#333",
+            cursor:"pointer"
         });
 
-    } else {
-        alert('信息不完整');
+        (function(){
+            var index = i;
+            var _iw = createInfoWindow(i);
+            var _marker = marker;
+            _marker.addEventListener("click",function(){
+                this.openInfoWindow(_iw);
+            });
+            _iw.addEventListener("open",function(){
+                _marker.getLabel().hide();
+            })
+            _iw.addEventListener("close",function(){
+                _marker.getLabel().show();
+            })
+            label.addEventListener("click",function(){
+                _marker.openInfoWindow(_iw);
+            })
+            if(!!json.isOpen){
+                label.hide();
+                _marker.openInfoWindow(_iw);
+            }
+        })()
     }
-});
+}
+//创建InfoWindow
+function createInfoWindow(i){
+    var json = markerArr[i];
+    var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+    return iw;
+}
+//创建一个Icon
+function createIcon(json){
+    var icon = new BMap.Icon("../img/favicon.ico", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+    return icon;
+}
 
-
+initMap();//创建和初始化地图
 
 
 

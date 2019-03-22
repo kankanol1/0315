@@ -3,7 +3,8 @@
     text-align: center;
     font-family: fontnameRegular;
     font-size: 22px;
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 20px;
     position: relative;
     left: -100px;
 }
@@ -48,12 +49,32 @@ label::before{
 .ps{
     color: red;}
 
+#con{
+    position: relative;
+    padding: 50px 0;
+    margin: 0 auto;
+    width: 954px;
+}
+
+
+#con .infoC{
+    width:350px;
+    display: inline-block;
+    position: relative;
+    top: -100px;
+    right: 0;
+}
+#con .map{
+    width: 600px;
+    display: inline-block;
+    position: relative;
+
+}
+#dituContent{
+    height: 300px;
+    border: 1px solid #0f0f0f;
+}
 .infoC{
-    position: absolute;
-    left:250px;
-    top: 700px;
-
-
 
 }
 .infoC h3{
