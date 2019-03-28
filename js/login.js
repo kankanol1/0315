@@ -42,7 +42,7 @@ function addMapControl(){
 }
 
 //标注点数组
-let markerArr = [{title:"公司地点",content:"山东省济南市高新区舜泰广场1号楼西区1105室",point:"117.154693|36.670259",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+var markerArr = [{title:"济南观澜数据技术有限公司",content:"山东省济南市高新区舜泰广场1号楼西区1105室",point:"117.154693|36.670259",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
 ];
 //创建marker
 function addMarker(){
@@ -100,7 +100,7 @@ function createIcon(json){
 
 initMap();//创建和初始化地图
 
-
+//http://api.map.baidu.com/lbsapi/creatmap/index.html
 
 
 
