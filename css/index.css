@@ -252,47 +252,6 @@ body {
 }
 /*---------------------------------合作伙伴------------------------*/
 /*---------------------------------/合作伙伴------------------------*/
-#demo {
-  display: none;
-  background-repeat: no-repeat;
-}
-#demo .tari h2 {
-  margin: 0 auto;
-  padding: 0.95238095rem 0 0 0.47619048rem;
-  text-align: center;
-  color: #fff;
-}
-#demo .tari .container .row {
-  overflow: hidden;
-}
-#demo .tari .container .row .item {
-  color: #fff;
-  margin: 0.23809524rem;
-  padding: 0.23809524rem;
-  position: relative;
-  left: 4.76190476rem;
-  opacity: 0;
-}
-#demo .tari .container .row .item div.img {
-  padding-top: 0.19047619rem;
-  padding-right: 0.95238095rem;
-}
-#demo .tari .container .row .item div.img h4 {
-  display: inline-block;
-  padding: 0.5952381rem;
-  font-size: 0.52380952rem;
-  color: white;
-  font-weight: bold;
-  text-shadow: 0 0 0.11904762rem #000000;
-}
-#demo .tari .container .row .item div.co {
-  font-size: 0.38095238rem;
-  text-align: left;
-  padding-right: 1.19047619rem;
-  text-indent: 0.71428571rem;
-  line-height: 0.5952381rem;
-  margin: 0.23809524rem 0;
-}
 /*----------------------------------------------/首页----------------------------------------------*/
 /*----------------------------------------------产品----------------------------------------------*/
 /*----------------------------------------------/产品----------------------------------------------*/
@@ -1651,6 +1610,7 @@ body {
     left: 5.95238095rem;
     text-align: left;
     margin: 0 auto;
+    display: inline-block;
     color: #fff;
     font-weight: bold;
     font-size: 1.14285714rem;
