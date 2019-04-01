@@ -81,7 +81,6 @@ function addMarker(){
             })
             if(!!json.isOpen){
                 label.hide();
-
                 _marker.openInfoWindow(_iw);
             }
         })()

@@ -63,47 +63,6 @@ body {
 #footer .bottom .info li.active span {
   font-size: 0.28571429rem;
 }
-#footer {
-  padding-top: 0.47619048rem;
-}
-#footer .container .row {
-  text-align: center;
-}
-#footer .container .row .item {
-  padding: 0.23809524rem;
-}
-#footer .container .row .item h5 {
-  font-size: 0.33333333rem;
-}
-#footer .container .row .item ul li a {
-  color: #00429a;
-  font-size: 0.38095238rem;
-}
-#footer .container .row .item ul li span {
-  height: 0.28571429rem;
-}
-#footer .bottom {
-  text-align: center;
-}
-#footer .bottom .info li.active {
-  padding: 0 0.23809524rem;
-}
-#footer .bottom .info li.active a {
-  font-size: 0.23809524rem;
-}
-#footer .bottom .info li.active span {
-  margin: 0 0.04761905rem;
-}
-#footer .bottom p {
-  font-size: 0.23809524rem;
-  margin-top: 0.47619048rem;
-}
-#footer .bottom p img {
-  margin-right: 0.23809524rem;
-}
-#footer .bottom p span {
-  color: #333;
-}
 /*-----------------------------------------------/footer-------------------------------------------------------*/
 .topImg {
   width: 100%;
@@ -289,68 +248,6 @@ body {
   background-color: #f7f7f7;
 }
 /*-------------------------------------------/加入我们--------------------------------------------------------*/
-#connectBox {
-  position: fixed;
-  height: 0;
-  right: 0;
-  bottom: 3.57142857rem;
-  display: none;
-  z-index: 100;
-}
-#connectBox .show {
-  width: 1.19047619rem;
-  height: 2.61904762rem;
-  color: #fff;
-  padding: 0 0.28571429rem;
-  font-size: 0.57142857rem;
-  background-color: #000;
-  position: relative;
-  cursor: pointer;
-}
-#connectBox .show img {
-  width: 0.5952381rem;
-  height: 0.5952381rem;
-  margin: 0.0952381rem 0;
-}
-#connectBox .show .info {
-  display: none;
-  position: relative;
-  left: -5.5952381rem;
-  top: -2.61904762rem;
-  color: #fff;
-}
-#connectBox .show .info .co {
-  padding: 0.33333333rem 0.35714286rem;
-  width: 5rem;
-  height: 2.85714286rem;
-  position: absolute;
-  border-radius: 0.23809524rem;
-  background-color: #000;
-}
-#connectBox .show .info .co p {
-  padding: 0;
-  margin: 0;
-  height: 0.47619048rem;
-  line-height: 1.19047619rem;
-  font-size: 0.28571429rem;
-}
-#connectBox .show .info::after {
-  content: '';
-  width: 0;
-  height: 0;
-  display: block;
-  position: absolute;
-  left: 5rem;
-  top: 0.47619048rem;
-  border: 0.19047619rem solid rgba(0, 0, 0, 0);
-  border-left: 0.19047619rem solid #000000;
-}
-#connectBox .show .info:hover {
-  display: block;
-}
-#connectBox .show:hover .info {
-  display: block;
-}
 #bo {
   display: none;
 }
@@ -1562,6 +1459,106 @@ body {
     height: 9.52380952rem;
     border: 0.02380952rem solid #0f0f0f;
   }
+  #footer {
+    padding-top: 0.47619048rem;
+  }
+  #footer .item {
+    padding: 0.23809524rem 2.80952381rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #footer .item li {
+    display: inline-block;
+    padding: 0 0.71428571rem;
+  }
+  #footer .item li a {
+    font-size: 0.33333333rem;
+    color: #00429a;
+  }
+  #footer .bottom {
+    text-align: center;
+  }
+  #footer .bottom .info li.active {
+    padding: 0 0.23809524rem;
+  }
+  #footer .bottom .info li.active a {
+    font-size: 0.33333333rem;
+  }
+  #footer .bottom .info li.active span {
+    margin: 0 0.04761905rem;
+  }
+  #footer .bottom p {
+    font-size: 0.33333333rem;
+    margin-top: 0.47619048rem;
+  }
+  #footer .bottom p img {
+    margin-right: 0.23809524rem;
+  }
+  #footer .bottom p span {
+    color: #333;
+  }
+  #connectBox {
+    position: fixed;
+    height: 0;
+    right: 0;
+    bottom: 3.57142857rem;
+    display: none;
+    z-index: 100;
+  }
+  #connectBox .show {
+    width: 1.19047619rem;
+    height: 2.61904762rem;
+    color: #fff;
+    padding: 0 0.28571429rem;
+    font-size: 0.57142857rem;
+    background-color: #000;
+    position: relative;
+    cursor: pointer;
+  }
+  #connectBox .show img {
+    width: 0.5952381rem;
+    height: 0.5952381rem;
+    margin: 0.0952381rem 0;
+  }
+  #connectBox .show .info {
+    display: block;
+    position: relative;
+    left: -6.54761905rem;
+    top: -2.61904762rem;
+    color: #fff;
+  }
+  #connectBox .show .info .co {
+    padding: 0.33333333rem 0.35714286rem;
+    width: 5.95238095rem;
+    height: 2.85714286rem;
+    position: absolute;
+    border-radius: 0.23809524rem;
+    background-color: #000;
+  }
+  #connectBox .show .info .co p {
+    padding: 0;
+    margin: 0;
+    height: 0.47619048rem;
+    line-height: 1.19047619rem;
+    font-size: 0.28571429rem;
+  }
+  #connectBox .show .info::after {
+    content: '';
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    left: 5.95238095rem;
+    top: 0.47619048rem;
+    border: 0.19047619rem solid rgba(0, 0, 0, 0);
+    border-left: 0.19047619rem solid #000000;
+  }
+  #connectBox .show .info:hover {
+    display: block;
+  }
+  #connectBox .show:hover .info {
+    display: block;
+  }
 }
 @media screen and (max-width: 500px) {
   #product .bar {
@@ -2582,7 +2579,7 @@ body {
     font-family: Times New Roman, Arial, Helvetica, sans-serif;
     text-indent: 1.42857143rem;
     font-size: 0.95238095rem;
-    padding: 0 1.19047619rem;
+    padding: 1.19047619rem;
     position: relative;
   }
   #con {
@@ -2639,5 +2636,106 @@ body {
     width: 100%;
     height: 19.04761905rem;
     border: 0.02380952rem solid #0f0f0f;
+  }
+  #footer {
+    padding-top: 0.47619048rem;
+  }
+  #footer .item {
+    padding: 0.23809524rem 2.80952381rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #footer .item li {
+    display: inline-block;
+    padding: 0 0.71428571rem;
+  }
+  #footer .item li a {
+    font-size: 0.33333333rem;
+    color: #00429a;
+  }
+  #footer .bottom {
+    text-align: center;
+  }
+  #footer .bottom .info li.active {
+    padding: 0 0.23809524rem;
+  }
+  #footer .bottom .info li.active a {
+    font-size: 0.38095238rem;
+  }
+  #footer .bottom .info li.active span {
+    margin: 0 0.04761905rem;
+  }
+  #footer .bottom p {
+    font-size: 0.33333333rem;
+    margin-top: 0.47619048rem;
+  }
+  #footer .bottom p img {
+    margin-right: 0.23809524rem;
+  }
+  #footer .bottom p span {
+    color: #333;
+  }
+  #connectBox {
+    position: fixed;
+    height: 0;
+    right: 0;
+    bottom: 7.14285714rem;
+    display: none;
+    z-index: 100;
+  }
+  #connectBox .show {
+    width: 1.9047619rem;
+    height: 4.76190476rem;
+    color: #fff;
+    text-align: center;
+    padding: 0 0.28571429rem;
+    font-size: 0.95238095rem;
+    background-color: #000;
+    position: relative;
+    cursor: pointer;
+  }
+  #connectBox .show img {
+    width: 0.71428571rem;
+    height: 0.71428571rem;
+    margin: 0.23809524rem 0;
+  }
+  #connectBox .show .info {
+    display: none;
+    position: relative;
+    left: -12.5rem;
+    top: -4.04761905rem;
+    color: #fff;
+  }
+  #connectBox .show .info .co {
+    text-align: left;
+    padding: 0.47619048rem;
+    width: 11.9047619rem;
+    height: 4.76190476rem;
+    position: absolute;
+    border-radius: 0.23809524rem;
+    background-color: #000;
+  }
+  #connectBox .show .info .co p {
+    padding: 0;
+    margin: 0;
+    line-height: 1.19047619rem;
+    font-size: 0.71428571rem;
+  }
+  #connectBox .show .info::after {
+    content: '';
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    left: 11.9047619rem;
+    top: 0.47619048rem;
+    border: 0.35714286rem solid rgba(0, 0, 0, 0);
+    border-left: 0.35714286rem solid #000000;
+  }
+  #connectBox .show .info:hover {
+    display: block;
+  }
+  #connectBox .show:hover .info {
+    display: block;
   }
 }
