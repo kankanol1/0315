@@ -1521,7 +1521,7 @@ body {
     margin: 0.0952381rem 0;
   }
   #connectBox .show .info {
-    display: block;
+    display: none;
     position: relative;
     left: -6.54761905rem;
     top: -2.61904762rem;
