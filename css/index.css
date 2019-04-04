@@ -347,6 +347,9 @@ body {
     padding: 0 2.38095238rem;
   }
   #aboutus .contentC .fonder {
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-align-last: left;
     display: none;
     position: relative;
   }
@@ -379,6 +382,10 @@ body {
     border-left: 0.0952381rem solid #5278b6;
     padding-left: 0.47619048rem;
   }
+  #aboutus .contentC .fonder h4 {
+    font-size: 0.47619048rem;
+    font-weight: bold;
+  }
   #aboutus .contentC .fonder p {
     line-height: 1.14285714rem;
     text-indent: 0.95238095rem;
@@ -401,6 +408,9 @@ body {
   #aboutus .contentC .fonder:nth-of-type(3) div.zheng img {
     height: 5.95238095rem;
     border: 0.02380952rem solid #000000;
+  }
+  #product h3 {
+    font-weight: bold;
   }
   #product .bar {
     margin: 0.47619048rem auto;
@@ -469,7 +479,6 @@ body {
     display: inline-block;
     margin: 0;
     flex-grow: 1;
-    height: 11.9047619rem;
   }
   #product .pro div:nth-child(1) {
     padding: 0.47619048rem 0.47619048rem 0 2.80952381rem;
@@ -483,13 +492,15 @@ body {
     font-size: 0.71428571rem;
   }
   #product .pro div:nth-child(1) p {
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-align-last: left;
     line-height: 0.95238095rem;
-    text-indent: 0.71428571rem;
+    text-indent: 0.95238095rem;
     font-size: 0.42857143rem;
   }
   #product .pro div:nth-child(2) img {
     width: 100%;
-    height: 11.9047619rem;
     margin: 0;
   }
   #product .pro .cb1 {
@@ -532,8 +543,11 @@ body {
     left: 0.02380952rem;
   }
   #product .gn p {
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-align-last: left;
     line-height: 0.95238095rem;
-    text-indent: 0.71428571rem;
+    text-indent: 0.95238095rem;
     font-size: 0.42857143rem;
   }
   #product .skillA h3 {
@@ -543,6 +557,7 @@ body {
     font-size: 0.71428571rem;
     color: #000;
     margin-left: 2.80952381rem;
+    font-weight: bold;
   }
   #product .skillA .pro1,
   #product .skillA .pro2,
@@ -577,12 +592,16 @@ body {
   #product .skillA .pro2 div h4,
   #product .skillA .pro3 div h4 {
     font-size: 0.42857143rem;
+    font-weight: bold;
   }
   #product .skillA .pro1 div p,
   #product .skillA .pro2 div p,
   #product .skillA .pro3 div p {
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-align-last: left;
     line-height: 0.95238095rem;
-    text-indent: 0.71428571rem;
+    text-indent: 0.95238095rem;
     font-size: 0.42857143rem;
   }
   #product .skillA .pro1 div img,
@@ -619,8 +638,11 @@ body {
     left: 0.02380952rem;
   }
   #product .youA p {
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-align-last: left;
     line-height: 0.95238095rem;
-    text-indent: 1.19047619rem;
+    text-indent: 0.95238095rem;
     font-size: 0.42857143rem;
   }
   #product .appA {
@@ -728,6 +750,11 @@ body {
   #scheme .bar ul li:hover a {
     color: #00429a;
   }
+  #scheme .pros {
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-align-last: left;
+  }
   #scheme .pros .pro1 {
     display: flex;
   }
@@ -761,21 +788,18 @@ body {
     width: 50%;
   }
   #scheme .pros .pro1 .pro1-2 img {
+    padding-top: 2.38095238rem;
     width: 100%;
-    height: 11.9047619rem;
   }
   #scheme .pros .pro2 {
     display: flex;
   }
   #scheme .pros .pro2 .pro2-1 {
-    background-color: black;
     flex-grow: 1;
     width: 50%;
-    height: 9.52380952rem;
   }
   #scheme .pros .pro2 .pro2-1 img {
     width: 100%;
-    height: 9.52380952rem;
   }
   #scheme .pros .pro2 .pro2-2 {
     flex-grow: 1;
@@ -790,6 +814,11 @@ body {
     font-size: 0.42857143rem;
     line-height: 0.85714286rem;
     font-family: Times New Roman, Arial, Helvetica, sans-serif;
+  }
+  #scheme .proj {
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-align-last: left;
   }
   #scheme .proj .pro1 {
     display: flex;
@@ -819,44 +848,23 @@ body {
     font-family: Times New Roman, Arial, Helvetica, sans-serif;
   }
   #scheme .proj .pro1 .pro1-2 {
-    height: 11.9047619rem;
     flex-grow: 1;
     width: 50%;
   }
   #scheme .proj .pro1 .pro1-2 img {
     width: 100%;
-    height: 11.9047619rem;
+    padding-top: 2.38095238rem;
   }
   #scheme .proj .pro2 {
     display: flex;
   }
   #scheme .proj .pro2 .pro2-1 {
-    background-color: black;
     flex-grow: 1;
     width: 50%;
   }
   #scheme .proj .pro2 .pro2-1 img {
     width: 100%;
-  }
-  #scheme .proj .pro2 .pro2-2 {
-    flex-grow: 1;
-    width: 50%;
-    background-color: #245da8;
-    color: #fff;
-    padding: 2.38095238rem 2.80952381rem 0 1.9047619rem;
-  }
-  #scheme .proj .pro2 .pro2-2 p {
-    float: left;
-    text-indent: 0.71428571rem;
-    font-size: 0.42857143rem;
-    line-height: 0.95238095rem;
-    font-family: Times New Roman, Arial, Helvetica, sans-serif;
-  }
-  #scheme .proj .pro2 .pro2-1 {
-    height: 13.33333333rem;
-  }
-  #scheme .proj .pro2 .pro2-1 img {
-    height: 13.33333333rem;
+    padding-top: 2.38095238rem;
   }
   #scheme .proj .pro2 .pro2-3 {
     height: 13.33333333rem;
@@ -929,6 +937,9 @@ body {
     color: #000;
   }
   #scheme .value .row1 .item div p {
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-align-last: left;
     padding: 0 0.23809524rem;
     text-indent: 0.71428571rem;
     line-height: 0.95238095rem;
@@ -1118,6 +1129,9 @@ body {
     text-align: center;
   }
   #scheme .nodejt .jt .itemj .it div p {
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-align-last: left;
     font-family: Times New Roman, Arial, Helvetica, sans-serif;
     font-size: 0.38095238rem;
     text-indent: 0.71428571rem;
@@ -1295,7 +1309,14 @@ body {
     text-align: left;
     margin-top: 0.47619048rem;
   }
+  #joinUs .postBox .postInfo div.item h4 {
+    font-weight: bold;
+    font-size: 0.47619048rem;
+  }
   #joinUs .postBox .postInfo div.item p {
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-align-last: left;
     text-indent: 0.04761905rem;
     padding: 0;
     color: #666;
@@ -1542,6 +1563,9 @@ body {
     line-height: 1.19047619rem;
     font-size: 0.28571429rem;
   }
+  #connectBox .show .info .co p:nth-of-type(2) {
+    padding-left: 1.47619048rem;
+  }
   #connectBox .show .info::after {
     content: '';
     width: 0;
@@ -1561,6 +1585,9 @@ body {
   }
 }
 @media screen and (max-width: 500px) {
+  #product h3 {
+    font-weight: bold;
+  }
   #product .bar {
     margin: 1.19047619rem auto;
     width: 90%;
@@ -1636,8 +1663,11 @@ body {
     font-size: 1.19047619rem;
   }
   #product .pro div:nth-child(1) p {
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-align-last: left;
     line-height: 1.42857143rem;
-    text-indent: 1.42857143rem;
+    text-indent: 1.9047619rem;
     font-size: 0.95238095rem;
   }
   #product .pro div:nth-child(2) {
@@ -1688,8 +1718,11 @@ body {
     left: 0.02380952rem;
   }
   #product .gn p {
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-align-last: left;
     line-height: 1.19047619rem;
-    text-indent: 1.42857143rem;
+    text-indent: 1.9047619rem;
     font-size: 0.95238095rem;
   }
   #product .skillA h3 {
@@ -1734,12 +1767,16 @@ body {
   #product .skillA .pro2 div h4,
   #product .skillA .pro3 div h4 {
     font-size: 1.07142857rem;
+    font-weight: bold;
   }
   #product .skillA .pro1 div p,
   #product .skillA .pro2 div p,
   #product .skillA .pro3 div p {
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-align-last: left;
     line-height: 1.19047619rem;
-    text-indent: 1.42857143rem;
+    text-indent: 1.9047619rem;
     font-size: 0.95238095rem;
   }
   #product .skillA .pro1 div img,
@@ -1776,8 +1813,11 @@ body {
     left: 0.02380952rem;
   }
   #product .youA p {
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-align-last: left;
     line-height: 1.19047619rem;
-    text-indent: 1.42857143rem;
+    text-indent: 1.9047619rem;
     font-size: 0.95238095rem;
   }
   #product .appA {
@@ -1802,7 +1842,10 @@ body {
     font-size: 1.07142857rem;
   }
   #product .appA .ap div.aO .itemA p {
-    text-indent: 1.42857143rem;
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-align-last: left;
+    text-indent: 1.9047619rem;
     line-height: 1.19047619rem;
     font-size: 0.95238095rem;
   }
@@ -1893,7 +1936,10 @@ body {
     font-size: 1.19047619rem;
   }
   #scheme .pros .pro1 .pro1-1 p {
-    text-indent: 1.42857143rem;
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-align-last: left;
+    text-indent: 1.9047619rem;
     font-size: 0.95238095rem;
     line-height: 1.19047619rem;
     font-family: Times New Roman, Arial, Helvetica, sans-serif;
@@ -1913,7 +1959,10 @@ body {
     padding: 2.38095238rem 2.80952381rem;
   }
   #scheme .pros .pro2 .pro2-2 p {
-    text-indent: 1.42857143rem;
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-align-last: left;
+    text-indent: 1.9047619rem;
     font-size: 0.95238095rem;
     line-height: 1.19047619rem;
     font-family: Times New Roman, Arial, Helvetica, sans-serif;
@@ -1934,7 +1983,10 @@ body {
     font-size: 1.19047619rem;
   }
   #scheme .proj .pro1 .pro1-1 p {
-    text-indent: 1.42857143rem;
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-align-last: left;
+    text-indent: 1.9047619rem;
     font-size: 0.95238095rem;
     line-height: 1.19047619rem;
     font-family: Times New Roman, Arial, Helvetica, sans-serif;
@@ -1956,8 +2008,10 @@ body {
     padding: 2.38095238rem 2.80952381rem 0 1.9047619rem;
   }
   #scheme .proj .pro2 .pro2-2 p {
-    float: left;
-    text-indent: 1.42857143rem;
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-align-last: left;
+    text-indent: 1.9047619rem;
     font-size: 0.95238095rem;
     line-height: 1.19047619rem;
     font-family: Times New Roman, Arial, Helvetica, sans-serif;
@@ -1976,7 +2030,10 @@ body {
     border-left: 0.0952381rem solid #ffffff;
   }
   #scheme .proj .pro2 .pro2-3 p {
-    text-indent: 1.42857143rem;
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-align-last: left;
+    text-indent: 1.9047619rem;
     font-size: 0.95238095rem;
     line-height: 1.19047619rem;
     font-family: Times New Roman, Arial, Helvetica, sans-serif;
@@ -2017,8 +2074,11 @@ body {
     color: #000;
   }
   #scheme .value .row1 .item div p {
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-align-last: left;
     padding: 0 0.23809524rem;
-    text-indent: 1.42857143rem;
+    text-indent: 1.9047619rem;
     line-height: 1.19047619rem;
     font-size: 0.95238095rem;
     color: #6d6d6d;
@@ -2074,7 +2134,7 @@ body {
   }
   #scheme .node h3 {
     font-family: Times New Roman, Arial, Helvetica, sans-serif;
-    font-size: 0.95238095rem;
+    font-size: 1.07142857rem;
     border-left: 0.0952381rem solid #000000;
     color: #000;
   }
@@ -2110,7 +2170,7 @@ body {
     position: relative;
   }
   #scheme .node .all ul .item span {
-    font-size: 0.42857143rem;
+    font-size: 0.95238095rem;
   }
   #scheme .node .all ul .item span:nth-child(1) {
     position: relative;
@@ -2136,6 +2196,9 @@ body {
     padding: 0 1.42857143rem 0 1.9047619rem;
   }
   #scheme .node .all ul .item p {
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-align-last: left;
     display: inline-block;
     line-height: 1.66666667rem;
     font-size: 0.42857143rem;
@@ -2166,6 +2229,9 @@ body {
     padding: 0.23809524rem 0;
   }
   #scheme .node .all ul .item div:nth-child(2) p {
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-align-last: left;
     text-indent: 0.71428571rem;
     font-size: 0.42857143rem;
     height: 0.5952381rem;
@@ -2175,6 +2241,9 @@ body {
     color: #5f5f5f;
   }
   #scheme .nodejt {
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-align-last: left;
     font-family: Times New Roman, Arial, Helvetica, sans-serif;
     padding: 0.47619048rem 2.85714286rem;
     margin-bottom: 0.47619048rem;
@@ -2195,9 +2264,12 @@ body {
     text-align: center;
   }
   #scheme .nodejt .jt .itemj .it div p {
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-align-last: left;
     font-family: Times New Roman, Arial, Helvetica, sans-serif;
     font-size: 0.95238095rem;
-    text-indent: 1.42857143rem;
+    text-indent: 1.9047619rem;
     color: #6e6e6e;
     line-height: 1.19047619rem;
   }
@@ -2284,13 +2356,14 @@ body {
   }
   #aboutus .contentC .fonder .yu div.yu1 {
     flex-grow: 1;
-    margin: 0.23809524rem 0.47619048rem;
+    margin: 0.23809524rem 0;
   }
   #aboutus .contentC .fonder .yu div:nth-of-type(1) {
     padding: 0.07142857rem;
   }
   #aboutus .contentC .fonder .yu div:nth-of-type(2) img {
     width: 7.14285714rem;
+    padding-left: 0.47619048rem;
   }
   #aboutus .contentC .fonder .shu {
     text-align: center;
@@ -2308,9 +2381,16 @@ body {
     border-left: 0.0952381rem solid #5278b6;
     padding-left: 0.47619048rem;
   }
+  #aboutus .contentC .fonder h4 {
+    font-weight: bold;
+    font-size: 0.95238095rem;
+  }
   #aboutus .contentC .fonder p {
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-align-last: left;
     line-height: 1.19047619rem;
-    text-indent: 1.66666667rem;
+    text-indent: 1.9047619rem;
     font-family: Times New Roman, Arial, Helvetica, sans-serif;
     font-size: 0.95238095rem;
   }
@@ -2474,9 +2554,13 @@ body {
   }
   #joinUs .postBox .postInfo div.item h4 {
     font-size: 1.07142857rem;
+    font-weight: bold;
   }
   #joinUs .postBox .postInfo div.item p {
-    text-indent: 0.04761905rem;
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-align-last: left;
+    text-indent: 1.9047619rem;
     padding: 0;
     color: #666;
     font-size: 0.95238095rem;
@@ -2720,6 +2804,9 @@ body {
     margin: 0;
     line-height: 1.19047619rem;
     font-size: 0.71428571rem;
+  }
+  #connectBox .show .info .co p:nth-of-type(2) {
+    padding-left: 3.61904762rem;
   }
   #connectBox .show .info::after {
     content: '';
