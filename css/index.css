@@ -2148,29 +2148,13 @@ body {
     background: linear-gradient(left, #a7d3ff, #ffffff);
     /* 标准的语法 */
   }
-  #scheme .node .all ul .item:nth-of-type(even) div:nth-child(1) {
-    display: inline-block;
-    width: 20%;
-    position: relative;
-  }
-  #scheme .node .all ul .item:nth-of-type(even) div:nth-child(1) span:nth-child(1) {
-    display: inline-block;
-    margin-bottom: 0.23809524rem;
-    line-height: 1.66666667rem;
-  }
-  #scheme .node .all ul .item:nth-of-type(even) div:nth-child(1) span:nth-child(2) {
-    display: inline-block;
-    position: relative;
-    top: -0.23809524rem;
-  }
   #scheme .node .all ul .item {
     height: 1.66666667rem;
-    font-size: 0.42857143rem;
     color: #5f5f5f;
     position: relative;
   }
   #scheme .node .all ul .item span {
-    font-size: 0.95238095rem;
+    font-size: 0.9047619rem;
   }
   #scheme .node .all ul .item span:nth-child(1) {
     position: relative;
@@ -2178,8 +2162,9 @@ body {
     line-height: 1.66666667rem;
     border: 0.02380952rem solid #245da8;
     height: 0.23809524rem;
-    left: 0.95238095rem;
+    left: 0.23809524rem;
     width: 0.23809524rem;
+    top: -0.23809524rem;
     border-radius: 50%;
   }
   #scheme .node .all ul .item span:nth-child(1)::before {
@@ -2193,7 +2178,7 @@ body {
   #scheme .node .all ul .item span:nth-child(2) {
     color: #245da8;
     line-height: 1.66666667rem;
-    padding: 0 1.42857143rem 0 1.9047619rem;
+    padding: 0 0.23809524rem 0 0.47619048rem;
   }
   #scheme .node .all ul .item p {
     text-align: justify;
@@ -2201,44 +2186,8 @@ body {
     text-align-last: left;
     display: inline-block;
     line-height: 1.66666667rem;
-    font-size: 0.42857143rem;
-  }
-  #scheme .node .all ul .item div {
-    height: 1.66666667rem;
-  }
-  #scheme .node .all ul .item div p {
-    font-family: Times New Roman, Arial, Helvetica, sans-serif;
-    font-size: 0.42857143rem;
-  }
-  #scheme .node .all ul .item div:nth-child(1) {
-    display: inline-block;
-    width: 20%;
-    position: relative;
-  }
-  #scheme .node .all ul .item div:nth-child(1) span:nth-child(1) {
-    display: inline-block;
-    line-height: 1.66666667rem;
-  }
-  #scheme .node .all ul .item div:nth-child(1) span:nth-child(2) {
-    display: inline-block;
-    position: relative;
-  }
-  #scheme .node .all ul .item div:nth-child(2) {
-    display: inline-block;
-    width: 76%;
-    padding: 0.23809524rem 0;
-  }
-  #scheme .node .all ul .item div:nth-child(2) p {
-    text-align: justify;
-    text-justify: distribute-all-lines;
-    text-align-last: left;
-    text-indent: 0.71428571rem;
-    font-size: 0.42857143rem;
-    height: 0.5952381rem;
-    line-height: 0.5952381rem;
-    padding: 0;
-    margin: 0;
-    color: #5f5f5f;
+    font-size: 0.76190476rem;
+    margin-bottom: 0;
   }
   #scheme .nodejt {
     text-align: justify;
